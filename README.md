@@ -85,7 +85,7 @@ The application reads all configuration from the root `.env` file:
 ### 2. Start the Application
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 This command will:
