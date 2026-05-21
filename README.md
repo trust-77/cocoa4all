@@ -140,16 +140,16 @@ After login, you will see:
 
 ```bash
 # Stop all services
-docker-compose down
+docker compose down
 
 # Stop and remove all volumes (clears database)
-docker-compose down -v
+docker compose down -v
 
 # View logs of a specific service
-docker-compose logs backend
-docker-compose logs frontend
-docker-compose logs etl
-docker-compose logs postgres
+docker compose logs backend
+docker compose logs frontend
+docker compose logs etl
+docker compose logs postgres
 ```
 
 ## Running Individual Services Locally (Advanced)
@@ -258,13 +258,13 @@ REACT_APP_API_URL=http://localhost:8001
 
 ```bash
 # All services
-docker-compose logs -f
+docker compose logs -f
 
 # Specific service (follow output)
-docker-compose logs -f backend
+docker compose logs -f backend
 
 # Last 50 lines
-docker-compose logs --tail=50 etl
+docker compose logs --tail=50 etl
 ```
 
 ## License & Attribution
