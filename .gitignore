@@ -1,5 +1,27 @@
-# Environment files
+# Repository-wide ignores
 .env
+.env.*
+!.env.example
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Node / frontend artifacts
+node_modules/
+build/
+dist/
+coverage/
 
 # OS files
 .DS_Store
@@ -8,3 +30,6 @@ Thumbs.db
 # IDEs
 .vscode/
 .idea/
+
+# Misc local files
+*.log
